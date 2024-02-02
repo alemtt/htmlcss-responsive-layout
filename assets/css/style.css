@@ -1,3 +1,5 @@
+/*#region common */
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,46 @@
     --resp-footer: #333333FF;
 }
 
+/*#endregion common */
+
+
+
+/*#region debug */
+.debug .col-12{
+    height: 20rem;
+}
+
+.debug .col-6{
+    height: 20rem;
+}
+
+.debug .card{
+    height: 15rem;
+}
+/*
+.debug .container{
+    height: 25rem;
+}*/
+
+.debug .site-demo{
+    height: 110rem;
+}
+
+.debug .site-benefits{
+    height: 70rem;
+}
+
+/*#endregion debug */
+
+/*#region utility */
+
+.btn{
+    border-radius: 0.5rem;
+    color: var(--resp-lighter);
+    background-color: var(--resp-main);
+    padding: 0.25rem 1rem ;
+}
+
 .col-12{
     width: 100%;
 }
@@ -23,21 +65,14 @@
     width: calc((100%/12)*8);
 }
 
-.site-header{
-    background-color: var(--resp-main);
-}
-
-.site-header li{
-    display: inline-block;
+.col-6{
+    width: 50%;
 }
 
 .row{
     display: flex;
     flex-direction: column;
-}
-
-ul{
-    list-style: none;
+    gap: 1rem;
 }
 
 .container{
@@ -49,12 +84,76 @@ ul{
     width: 100%;
     background-color: var(--resp-mainsecon);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+    gap: 1.5rem;
 }
 
-.img-demo{
-    width: 70%;
+.card-cnt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
+
+/*#endregion utility */
+
+/*#region header */
+
+
+
+.site-header{
+    background-color: var(--resp-main);
+}
+
+
+.site-header li{
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.site-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*#endregion header */
+
+
+/*#region main */
+
+
+
+.site-planning{
+    background-color: var(--resp-second);
+}
+.site-planning .card{
+    background-color: var(--resp-lighter);
+}
+
+.site-planning .btn{
+    background-color: var(--resp-second);
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+
+.site-benefits{
+    background-color: var(--resp-second);
+}
+
+.site-benefits .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*#endregion main */
 
 
 @media screen and (max-width: 768px) {
