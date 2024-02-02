@@ -134,10 +134,10 @@ ul{
 .site-demo .card{
     background-color: var(--resp-mainsecon);
 }
-
 .site-demo h3{
     color: var(--resp-main);
 }
+
 
 .site-planning{
     background-color: var(--resp-second);
@@ -154,6 +154,7 @@ ul{
     aspect-ratio: 1;
     color: var(--resp-dark);
 }
+
 
 .img-tsm{
     width: calc((100%/12)*4);
