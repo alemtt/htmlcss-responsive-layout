@@ -81,7 +81,6 @@
 
 .card{
     border-radius: 0.5rem;
-    width: 100%;
     background-color: var(--resp-mainsecon);
     text-align: center;
     display: flex;
@@ -96,6 +95,11 @@
     text-align: center;
 }
 
+.card-row{
+    display: flex;
+    background-color: var(--resp-second);
+    border-radius: 0.5rem;
+}
 
 /*#endregion utility */
 
@@ -141,6 +145,16 @@ ul{
     background-color: var(--resp-second);
     border-radius: 50%;
     aspect-ratio: 1;
+}
+
+.img-tsm{
+    width: calc((100%/12)*4);
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.text-8{
+    width: calc((100%/12)*8);
 }
 
 
