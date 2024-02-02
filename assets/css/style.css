@@ -66,7 +66,7 @@
 }
 
 .col-6{
-    width: 50%;
+    width: 47%;
 }
 
 .row{
@@ -81,7 +81,6 @@
 
 .card{
     border-radius: 0.5rem;
-    background-color: var(--resp-mainsecon);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -92,12 +91,12 @@
 .card-cnt{
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 .card-row{
     display: flex;
     background-color: var(--resp-second);
+    color: var(--resp-lighter);
     border-radius: 0.5rem;
 }
 
@@ -132,7 +131,13 @@ ul{
 
 /*#region main */
 
+.site-demo .card{
+    background-color: var(--resp-mainsecon);
+}
 
+.site-demo h3{
+    color: var(--resp-main);
+}
 
 .site-planning{
     background-color: var(--resp-second);
@@ -140,11 +145,14 @@ ul{
 .site-planning .card{
     background-color: var(--resp-lighter);
 }
-
+.site-planning .card-cnt{
+    color: var(--resp-lighter);
+}
 .site-planning .btn{
     background-color: var(--resp-second);
     border-radius: 50%;
     aspect-ratio: 1;
+    color: var(--resp-dark);
 }
 
 .img-tsm{
@@ -153,18 +161,30 @@ ul{
     border-radius: 50%;
 }
 
+.site-testimonial h3{
+    color: var(--resp-second);
+}
+
 .text-8{
     width: calc((100%/12)*8);
 }
 
 
-.site-benefits{
+.site-benefits, .site-benefits .btn{
     background-color: var(--resp-second);
+}
+.site-benefits h1, h3{
+    color: var(--resp-second);
 }
 
 .site-benefits .row{
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+
+.site-benefits .card-cnt{
+    background-color: var(--resp-lighter);
 }
 
 /*#endregion main */
